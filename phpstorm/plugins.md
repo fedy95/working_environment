@@ -1,0 +1,8 @@
+ - PHP Annotations
+ - PHP Inspections (EA Extended)
+ - Symfony Plugin
+ - VCS Annotations Preloader
+ - .env files support
+ - BashSupport
+ - Ideolog
+ - PHP composer.json support
