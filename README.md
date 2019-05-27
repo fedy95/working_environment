@@ -3,7 +3,6 @@
 
 ## system packages
 
-- [Visual Paradigm](https://github.com/fedy95/working_environment/wiki/linux#vp-reset)
 - [development](https://github.com/fedy95/working_environment/wiki/linux#development)
 - [ssh](https://github.com/fedy95/working_environment/wiki/linux#ssh)
 - [apache](https://github.com/fedy95/working_environment/wiki/linux#apache)
@@ -28,6 +27,7 @@
   - [vmware](https://github.com/fedy95/working_environment/wiki/linux#vmware)
   - [virtualbox](https://github.com/fedy95/working_environment/wiki/linux#virtualbox)
 - [teamviewer](https://github.com/fedy95/working_environment/wiki/linux#teamviewer)
+- [Visual Paradigm](https://github.com/fedy95/working_environment/wiki/linux#vp-reset)
 
 # VMWare
 - apt install build-essential
