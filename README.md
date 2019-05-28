@@ -2,8 +2,6 @@
 
 
 - ## system packages
-
-
   - [development](https://github.com/fedy95/working_environment#development)
     - [ssh](https://github.com/fedy95/working_environment#ssh)
     - servers
@@ -30,7 +28,7 @@
   - [filezilla](https://github.com/fedy95/working_environment#filezilla)
   - [teamviewer](https://github.com/fedy95/working_environment#teamviewer)
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset)
-  
+---
   - ### development
     ```
     apt install snapd -y
