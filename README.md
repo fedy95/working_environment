@@ -13,7 +13,7 @@
     - [MySQL](https://github.com/fedy95/working_environment#mysql)
   - PHP
     - [7.1](https://github.com/fedy95/working_environment#71)
-    - [oci8](https://github.com/fedy95/working_environment#oci8)
+    - [oci8](https://github.com/fedy95/working_environment#oci8-php70-instantclient121020-oci82012)
     - [PDO_OCI](https://github.com/fedy95/working_environment#pdo_oci)
     - [composer](https://github.com/fedy95/working_environment#composer)
   - IDE
