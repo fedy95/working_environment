@@ -81,7 +81,7 @@
         systemctl restart apache2.service
       ```   
 
-  - ###DB
+  - ### DB
     - #### MySQL
       ```
       apt install mysql-server mysql-client -y
