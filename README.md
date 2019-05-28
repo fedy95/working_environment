@@ -2,32 +2,31 @@
 
 
 - ## system packages
-  - [development](https://github.com/fedy95/working_environment#development)
-    - [ssh](https://github.com/fedy95/working_environment#ssh)
+  - [development](https://github.com/fedy95/working_environment#development--to-contents)
+    - [ssh](https://github.com/fedy95/working_environment#ssh--to-contents)
     - servers
-      - [nginx](https://github.com/fedy95/working_environment#nginx)
-      - [apache2](https://github.com/fedy95/working_environment#apache2)
+      - [nginx](https://github.com/fedy95/working_environment#nginx--to-contents)
+      - [apache2](https://github.com/fedy95/working_environment#apache2--to-contents)
   - DB
-    - [MySQL](https://github.com/fedy95/working_environment#mysql)
+    - [MySQL](https://github.com/fedy95/working_environment#mysql--to-contents)
   - PHP
-    - [7.1](https://github.com/fedy95/working_environment#71)
-    - [oci8](https://github.com/fedy95/working_environment#oci8-php70-instantclient121020-oci82012)
-    - [PDO_OCI](https://github.com/fedy95/working_environment#pdo_oci)
-    - [composer](https://github.com/fedy95/working_environment#composer)
+    - [7.1](https://github.com/fedy95/working_environment#71--to-contents)
+    - [oci8](https://github.com/fedy95/working_environment#oci8-php70-instantclient121020-oci82012--to-contents)
+    - [PDO_OCI](https://github.com/fedy95/working_environment#pdo_oci--to-contents)
+    - [composer](https://github.com/fedy95/working_environment#composer--to-contents)
   - IDE
-    - [phpstorm](https://github.com/fedy95/working_environment#phpstorm)
-    - [pycharm](https://github.com/fedy95/working_environment#pycharm)
-    - [clion](https://github.com/fedy95/working_environment#clion)
-      - [GTest](https://github.com/fedy95/working_environment#gtest)
-    - [webstorm](https://github.com/fedy95/working_environment#webstorm)
-
+    - [phpstorm](https://github.com/fedy95/working_environment#phpstorm--to-contents)
+    - [pycharm](https://github.com/fedy95/working_environment#pycharm--to-contents)
+    - [clion](https://github.com/fedy95/working_environment#clion--to-contents)
+      - [GTest](https://github.com/fedy95/working_environment#gtest--to-contents)
+    - [webstorm](https://github.com/fedy95/working_environment#webstorm--to-contents)
   - VM
-    - [VMWare](https://github.com/fedy95/working_environment#vmware)
-    - [VirtualBox](https://github.com/fedy95/working_environment#virtualbox)
-  - [nodejs](https://github.com/fedy95/working_environment#nodejs)
-  - [filezilla](https://github.com/fedy95/working_environment#filezilla)
-  - [teamviewer](https://github.com/fedy95/working_environment#teamviewer)
-  - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset)
+    - [VMWare](https://github.com/fedy95/working_environment#vmware--to-contents)
+    - [VirtualBox](https://github.com/fedy95/working_environment#virtualbox--to-contents)
+  - [nodejs](https://github.com/fedy95/working_environment#nodejs--to-contents)
+  - [filezilla](https://github.com/fedy95/working_environment#filezilla--to-contents)
+  - [teamviewer](https://github.com/fedy95/working_environment#teamviewer--to-contents)
+  - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset--to-contents)
 ---
 
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
@@ -37,7 +36,7 @@
     snap install postman
     ```
       
-    - #### SSH
+    - #### SSH | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install ssh -y
       ```
@@ -66,12 +65,12 @@
       ```
           
     - #### servers
-      - ##### nginx
+      - ##### nginx | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
         apt install nginx -y
       ```
       
-      - ##### apache2
+      - ##### apache2 | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
         apt install apache2 apache2-utils apache2-dev -y
         nano /etc/apache2/ports.conf (8080 8443)
@@ -81,7 +80,7 @@
       ```   
 
   - ### DB
-    - #### MySQL
+    - #### MySQL | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install mysql-server mysql-client -y
       mysql -uroot
@@ -100,7 +99,7 @@
       ```
     
   - ### PHP
-    - #### 7.1
+    - #### 7.1 | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       add-apt-repository ppa:ondrej/php *(apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C)*
       apt update -y
@@ -128,7 +127,7 @@
       systemctl restart apache2.service
       ```
       
-    - #### oci8 (*PHP>=7.0, instantclient>=12.1.0.2.0, oci8>=2.0.12*)
+    - #### oci8 (*PHP>=7.0, instantclient>=12.1.0.2.0, oci8>=2.0.12*) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - Download packages [instantclient](https://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
         - instantclient-basic-linux.x64-12.2.0.1.0.zip;
@@ -164,7 +163,7 @@
       service apache2 restart
       ```
       
-    - #### PDO_OCI
+    - #### PDO_OCI | [to contents](https://github.com/fedy95/working_environment#system-packages) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       git clone -b PHP-7.#.# https://github.com/php/php-src && cd php-src 
       cd ext/pdo_oci
@@ -179,20 +178,20 @@
       service apache2 restart
       ```
       
-    - #### composer
+    - #### composer | [to contents](https://github.com/fedy95/working_environment#system-packages) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - [install](https://getcomposer.org/download/)
       mv composer.phar /usr/local/bin/composer 
       ```
       
   - ### IDE
-    - #### [phpStorm](https://www.jetbrains.com/phpstorm/?fromMenu) 
+    - #### [phpStorm](https://www.jetbrains.com/phpstorm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - [install from package](https://www.jetbrains.com/help/phpstorm/install-and-set-up-product.html)
       snap install phpstorm --classic
       ```
       
-    - #### [pyCharm](https://www.jetbrains.com/pycharm/?fromMenu)
+    - #### [pyCharm](https://www.jetbrains.com/pycharm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - [install from package](https://www.jetbrains.com/help/pycharm/install-and-set-up-product.html)
       snap install pycharm-professional --classic (snap install pycharm-community --classic)
@@ -200,7 +199,7 @@
       update-alternatives --install /usr/bin/python python /usr/bin/python3
       ```
       
-    - #### [cLion](https://www.jetbrains.com/clion/?fromMen)
+    - #### [cLion](https://www.jetbrains.com/clion/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - [install from package](https://www.jetbrains.com/help/clion/install-and-set-up-product.html)
       - [guide](http://wiki.cs.huji.ac.il/wiki/Installing_CLion_on_Linux)
@@ -210,7 +209,7 @@
       ./clion.sh
       ```
       
-      - ##### GTest
+      - ##### GTest | [to contents](https://github.com/fedy95/working_environment#system-packages) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install libgtest-dev
       cd /usr/src/gtest
@@ -219,14 +218,14 @@
       cp *.a /usr/lib
       ```
       
-    - #### [webstorm](https://www.jetbrains.com/webstorm/?fromMen)
+    - #### [webstorm](https://www.jetbrains.com/webstorm/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     - [install from package](https://www.jetbrains.com/help/webstorm/install-and-set-up-product.html)
     snap install webstorm --classic
     ```
  
   - ### VM
-    - ### VMWare
+    - ### VMWare | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install build-essential
       apt install open-vm-tools-desktop
@@ -235,24 +234,24 @@
       ~/Downloads/VMware-Player*
       ```
       
-    - ### VirtualBox
+    - ### VirtualBox | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install virtualbox -y
       ```
 
 
-  - ### [NodeJS](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+  - ### [NodeJS](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
     apt install nodejs -y
     ```
   
-  - ### filezilla
+  - ### filezilla | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     apt install filezilla -y
     ```
   
-  - ### teamviewer
+  - ### teamviewer | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     apt install gdebi-core
     wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
@@ -260,7 +259,7 @@
     teamviewer
     ```
     
-  - ### VP reset
+  - ### VP reset | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     rm -R ~/.config/VisualParadigm/
     ```
