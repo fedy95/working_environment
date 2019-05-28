@@ -30,7 +30,7 @@
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset)
 ---
 
-  - ### development | [to contents](https://github.com/fedy95/working_environment#oci8-php70-instantclient121020-oci82012)
+  - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     apt install snapd -y
     apt install git -y
