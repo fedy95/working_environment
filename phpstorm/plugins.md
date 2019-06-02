@@ -6,3 +6,4 @@
  - BashSupport
  - Ideolog
  - PHP composer.json support
+ - dark purple
