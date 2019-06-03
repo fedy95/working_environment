@@ -21,7 +21,7 @@
       - [GTest](https://github.com/fedy95/working_environment#gtest--to-contents)
     - [webstorm](https://github.com/fedy95/working_environment#webstorm--to-contents)
   - VM
-    - [VMWare](https://github.com/fedy95/working_environment#vmware--to-contents)
+    - [VMware](https://github.com/fedy95/working_environment#vmware--to-contents)
     - [VirtualBox](https://github.com/fedy95/working_environment#virtualbox--to-contents)
   - [nodeJS](https://github.com/fedy95/working_environment#nodejs--to-contents)
   - [filezilla](https://github.com/fedy95/working_environment#filezilla--to-contents)
@@ -225,7 +225,7 @@
     ```
  
   - ### VM
-    - ### VMWare | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    - ### VMware | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install build-essential
       apt install open-vm-tools-desktop
