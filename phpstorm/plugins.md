@@ -1,5 +1,5 @@
  - PHP Annotations
- - PHP Inspections (EA Extended)
+ - PHP Inspections (EA Extended) + PHP Inspections (EA Ultimate)
  - Symfony Plugin
  - VCS Annotations Preloader
  - .env files support
