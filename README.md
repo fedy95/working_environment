@@ -26,6 +26,7 @@
   - [nodeJS](https://github.com/fedy95/working_environment#nodejs--to-contents)
   - [filezilla](https://github.com/fedy95/working_environment#filezilla--to-contents)
   - [teamviewer](https://github.com/fedy95/working_environment#teamviewer--to-contents)
+  - [KRDC](https://github.com/fedy95/working_environment#krdc--to-contents)
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset--to-contents)
 ---
 
@@ -238,8 +239,7 @@
       ```
       apt install virtualbox -y
       ```
-
-
+      
   - ### [nodeJS](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
@@ -257,6 +257,11 @@
     wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
     gdebi teamviewer_amd64.deb
     teamviewer
+    ```
+    
+  - ### KRDC | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    ```
+    apt install krdc
     ```
     
   - ### VP reset | [to contents](https://github.com/fedy95/working_environment#system-packages)
