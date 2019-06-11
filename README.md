@@ -2,6 +2,7 @@
 
 
 - ## system packages
+  - [update](https://github.com/fedy95/working_environment#update--to-contents)
   - [development](https://github.com/fedy95/working_environment#development--to-contents)
     - [ssh](https://github.com/fedy95/working_environment#ssh--to-contents)
     - servers
@@ -29,7 +30,14 @@
   - [KRDC](https://github.com/fedy95/working_environment#krdc--to-contents)
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset--to-contents)
 ---
-
+  - ### update | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    ```
+    apt update
+    apt list --upgradable
+    apt dist-upgrade
+    apt install -f
+    ```
+    
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     apt install snapd -y
