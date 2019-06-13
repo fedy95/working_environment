@@ -7,3 +7,4 @@
  - Ideolog
  - PHP composer.json support
  - dark purple
+ - nginx support
