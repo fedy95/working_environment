@@ -8,3 +8,4 @@
  - PHP composer.json support
  - dark purple
  - nginx support
+ - PHP PSR-4 Namespace Detector
