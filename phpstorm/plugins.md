@@ -9,3 +9,5 @@
  - dark purple
  - nginx support
  - PHP PSR-4 Namespace Detector
+ - NEON support
+ - YAML/Ansibles support
