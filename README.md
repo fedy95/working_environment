@@ -172,7 +172,7 @@
       service apache2 restart
       ```
       
-    - #### PDO_OCI | [to contents](https://github.com/fedy95/working_environment#system-packages) | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    - #### PDO_OCI | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       git clone -b PHP-7.#.# https://github.com/php/php-src && cd php-src 
       cd ext/pdo_oci
@@ -187,7 +187,7 @@
       service apache2 restart
       ```
       
-    - #### composer | [to contents](https://github.com/fedy95/working_environment#system-packages) | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    - #### composer | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - [install](https://getcomposer.org/download/)
       mv composer.phar /usr/local/bin/composer 
