@@ -8,6 +8,7 @@
     - servers
       - [nginx](https://github.com/fedy95/working_environment#nginx--to-contents)
       - [apache2](https://github.com/fedy95/working_environment#apache2--to-contents)
+    - [VPN](https://protonvpn.com/support/linux-vpn-setup/)
   - DB
     - [MySQL](https://github.com/fedy95/working_environment#mysql--to-contents)
   - PHP
