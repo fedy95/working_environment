@@ -244,6 +244,8 @@
       ~/Downloads/VMware-Player*
       ```
       
+      - [tools repository](https://packages.vmware.com/tools/esx/latest/index.html)
+      
     - ### VirtualBox | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       apt install virtualbox -y
