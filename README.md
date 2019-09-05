@@ -19,6 +19,7 @@
   - IDE
     - [phpstorm](https://github.com/fedy95/working_environment#phpstorm--to-contents)
     - [pycharm](https://github.com/fedy95/working_environment#pycharm--to-contents)
+    - [idea](https://github.com/fedy95/working_environment#pycharm--to-contents)
     - [clion](https://github.com/fedy95/working_environment#clion--to-contents)
       - [GTest](https://github.com/fedy95/working_environment#gtest--to-contents)
     - [webstorm](https://github.com/fedy95/working_environment#webstorm--to-contents)
@@ -207,6 +208,12 @@
       snap install pycharm-professional --classic (snap install pycharm-community --classic)
       apt install python3
       update-alternatives --install /usr/bin/python python /usr/bin/python3
+      ```
+      
+    - #### [IDEA](https://www.jetbrains.com/idea/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
+      ```
+      - [install from package](https://www.jetbrains.com/help/idea/install-and-set-up-product.html)
+      snap install intellij-idea-ultimate --classic
       ```
       
     - #### [cLion](https://www.jetbrains.com/clion/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
