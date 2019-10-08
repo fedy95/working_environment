@@ -35,13 +35,12 @@
   - ### update | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     apt update
-    apt list --upgradable
     apt dist-upgrade
-    apt install -f
     ```
     
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
+    apt install openjdk-11-jre -y
     apt install snapd -y
     apt install git -y
     snap install postman
