@@ -1,5 +1,8 @@
 # working_environment
 
+- [neon kde](https://neon.kde.org/)
+- [ubuntu](https://ubuntu.com)
+- [debian](https://www.debian.org/)
 
 - ## system packages
   - [update](https://github.com/fedy95/working_environment#update--to-contents)
