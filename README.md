@@ -252,6 +252,9 @@
       - [install from package](https://www.vmware.com/products/workstation-player.html)
       chmod +x ~/Downloads/VMware-Player*
       ~/Downloads/VMware-Player*
+      
+      apt install open-vm-tools-desktop
+      apt install open-vm-tools
       ```
       
       - [tools repository](https://packages.vmware.com/tools/esx/latest/index.html)
