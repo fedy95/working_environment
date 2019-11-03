@@ -15,8 +15,10 @@
     - [VPN](https://protonvpn.com/support/linux-vpn-setup/)
   - DB
     - [MySQL](https://github.com/fedy95/working_environment#mysql--to-contents)
+    - [MariaDB](https://github.com/fedy95/working_environment#mariadb--to-contents)
   - PHP
     - [7.1](https://github.com/fedy95/working_environment#71--to-contents)
+    - [7.3](https://github.com/fedy95/working_environment#73--to-contents)
     - [oci8](https://github.com/fedy95/working_environment#oci8-php70-instantclient121020-oci82012--to-contents)
     - [PDO_OCI](https://github.com/fedy95/working_environment#pdo_oci--to-contents)
     - [composer](https://github.com/fedy95/working_environment#composer--to-contents)
@@ -98,27 +100,57 @@
       ```
       apt install mysql-server mysql-client -y
       mysql -uroot
-       - REVOKE ALL ON \*.\* FROM 'root'@'localhost';
-       - DROP USER 'root'@'localhost';
-       - FLUSH PRIVILEGES;
-       - CREATE USER 'root'@'localhost' IDENTIFIED BY 'rootroot';
-       - GRANT ALL PRIVILEGES ON \*.\* TO 'root'@'localhost';
-       - exit
-    
-       nano /etc/mysql/mysql.conf.d/mysqld.cnf
-       - [mysqld]
-       - [character-set-server=utf8
-       - [collation-server=utf8_general_ci
-       /etc/init.d/mysql restart
       ```
-    
+      ```
+      REVOKE ALL ON *.* FROM 'root'@'localhost';
+      DROP USER 'root'@'localhost';
+      FLUSH PRIVILEGES;
+      CREATE USER 'root'@'localhost' IDENTIFIED BY 'rootroot';
+      GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+      exit
+      ```
+      ```
+      nano /etc/mysql/mysql.conf.d/mysqld.cnf
+      ```
+      ```
+      [mysqld]
+      character-set-server=utf8
+      collation-server=utf8_general_ci
+      ```
+      ```
+      /etc/init.d/mysql restart
+      ```
+  - #### MariaDB | [to contents](https://github.com/fedy95/working_environment#system-packages)
+      ```
+      apt install mariadb-server mariadb-client
+      mysql -uroot
+      ```
+      ```
+      REVOKE ALL ON *.* FROM 'root'@'localhost';
+      DROP USER 'root'@'localhost';
+      FLUSH PRIVILEGES;
+      CREATE USER 'root'@'localhost' IDENTIFIED BY 'rootroot';
+      GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+      exit
+      ```   
+      ```
+      nano /etc/mysql/my.cnf
+      ```
+      ```
+      [mysqld]
+      character-set-server=utf8
+      collation-server=utf8_general_ci
+      ```
+      ```
+      /etc/init.d/mysql restart
+      ```
+      
   - ### PHP
     - #### 7.1 | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       add-apt-repository ppa:ondrej/php *(apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C)*
       apt update -y
       ```
-            
       ```
       apt install php7.1 php7.1-dev php7.1-common libapache2-mod-php7.1 php7.1-fpm php7.1-mysql php7.1-mbstring php7.1-readline php7.1-fpm php7.1-cli php7.1-curl php7.1-gd php7.1-xdebug php7.1-soap php7.1-curl php7.1-xsl php7.1-xml php7.1-intl php7.1-zip php7.1-curl php7.1-apcu php7.1-odbc php7.1-sqlite3 php7.1-curl php7.1-bcmath php7.1-imagick -y
       nano /etc/php/7.1/mods-available/xdebug.ini
@@ -140,7 +172,31 @@
        - `short_open_tag = On`
       systemctl restart apache2.service
       ```
+    - #### 7.3 | [to contents](https://github.com/fedy95/working_environment#system-packages)
+      ```
+      add-apt-repository ppa:ondrej/php
+      - or (apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C)
+      apt update -y
+      apt dist-upgrade
+      ```
+      ```
+      apt install php7.3 php7.3-dev php7.3-common php7.3-fpm php7.3-mysql php7.3-mbstring php7.3-readline php7.3-fpm php7.3-cli php7.3-curl php7.3-gd php7.3-xdebug php7.3-soap php7.3-curl php7.3-xsl php7.3-xml php7.3-intl php7.3-zip php7.3-curl php7.3-apcu php7.3-odbc php7.3-sqlite3 php7.3-curl php7.3-bcmath php7.3-imagick -y
       
+      apt install php php-dev php-common php-fpm php-mysql php-mbstring php-readline php-fpm php-cli php-curl php-gd php-xdebug php-soap php-curl php-xsl php-xml php-intl php-zip php-curl php-apcu php-odbc php-sqlite3 php-curl php-bcmath php-imagick -y
+      
+      nano /etc/php/7.3/mods-available/xdebug.ini
+      ```
+      ```
+      xdebug.remote_enable=1
+      xdebug.idekey="PHPSTORM"
+      xdebug.max_nesting_level=1000
+      xdebug.default_enable=1
+      xdebug.remote_host=127.0.0.1
+      xdebug.remote_port=9000
+      xdebug.remote_handler=dbgp
+      xdebug.remote_connect_back=1
+      xdebug.remote_autostart=1
+      ```
     - #### oci8 (*PHP>=7.0, instantclient>=12.1.0.2.0, oci8>=2.0.12*) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
       - Download packages [instantclient](https://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
@@ -200,29 +256,29 @@
       
   - ### IDE
     - #### [phpStorm](https://www.jetbrains.com/phpstorm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
       - [install from package](https://www.jetbrains.com/help/phpstorm/install-and-set-up-product.html)
+      ```
       snap install phpstorm --classic
       ```
       
     - #### [pyCharm](https://www.jetbrains.com/pycharm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
       - [install from package](https://www.jetbrains.com/help/pycharm/install-and-set-up-product.html)
+      ```
       snap install pycharm-professional --classic (snap install pycharm-community --classic)
       apt install python3
       update-alternatives --install /usr/bin/python python /usr/bin/python3
       ```
       
     - #### [IDEA](https://www.jetbrains.com/idea/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
       - [install from package](https://www.jetbrains.com/help/idea/install-and-set-up-product.html)
+      ```
       snap install intellij-idea-ultimate --classic
       ```
       
     - #### [cLion](https://www.jetbrains.com/clion/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
-      - [install from package](https://www.jetbrains.com/help/clion/install-and-set-up-product.html)
+      - [install from package](https://www.jetbrains.com/help/clion/install-and-set-up-product.html)   
       - [guide](http://wiki.cs.huji.ac.il/wiki/Installing_CLion_on_Linux)
+      ```
       apt install cmake gcc g++ clang gcc-multilib libgtest-dev
       tar xfz ~/Downloads/CLion-*.tar.gz -C /opt
       cd /opt/clion-2018.3.4/bin/
@@ -239,8 +295,8 @@
       ```
       
     - #### [webstorm](https://www.jetbrains.com/webstorm/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-    ```
     - [install from package](https://www.jetbrains.com/help/webstorm/install-and-set-up-product.html)
+    ```
     snap install webstorm --classic
     ```
  
