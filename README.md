@@ -56,9 +56,9 @@
       ```
       
       ```
-      - ssh-keygen -t rsa -C "fedy95@protonmail.com" 
-      - cat .ssh/id_rsa.pub 
-      - https://github.com/settings/keys
+      ssh-keygen -t rsa -C "fedy95@protonmail.com"
+      cat .ssh/id_rsa.pub
+      https://github.com/settings/keys
       ```
       
       - ##### [second account on machine](https://gist.github.com/jexchan/2351996)
