@@ -292,3 +292,9 @@
     ```
     rm -R ~/.config/VisualParadigm/
     ```
+### other
+- update server timezone
+  ```bash
+  timedatectl set-timezone Europe/Moscow
+  apt install ntp -y
+  ```
