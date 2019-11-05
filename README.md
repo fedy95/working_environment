@@ -365,4 +365,8 @@
   rm -rf /etc/mysql /var/lib/mysql 
   apt autoremove -y
   apt autoclean
+  
+  echo "/usr/sbin/mysqld { }" > /etc/apparmor.d/usr.sbin.mysqld
+  apparmor_parser -v -R /etc/apparmor.d/usr.sbin.mysqld
+  systemctl restart mariadb
   ```
