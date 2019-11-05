@@ -356,13 +356,13 @@
   ```
 - mysql
   ```
-  apt-get remove dbconfig-mysql 
-  apt remove --purge mysql* 
+  apt remove dbconfig-mysql 
+  apt remove --purge mysql*  -y
   apt --purge remove mysql-server 
   apt --purge remove mysql-client 
   apt --purge remove mysql-common 
   apt purge mysql-server mysql-client mysql-common mysql-server-core-5.7 mysql-client-core-5.7 
   rm -rf /etc/mysql /var/lib/mysql 
-  apt autoremove 
+  apt autoremove -y
   apt autoclean
   ```
