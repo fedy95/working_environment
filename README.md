@@ -354,7 +354,7 @@
   timedatectl set-timezone Europe/Moscow
   apt install ntp -y
   ```
-- mysql
+- mysql remove
   ```
   apt remove dbconfig-mysql 
   apt remove --purge mysql*  -y
