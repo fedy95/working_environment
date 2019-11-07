@@ -185,7 +185,8 @@
       apt install php7.3 php7.3-dev php7.3-common php7.3-fpm php7.3-mysql php7.3-mbstring php7.3-readline php7.3-fpm php7.3-cli php7.3-curl php7.3-gd php7.3-xdebug php7.3-soap php7.3-curl php7.3-xsl php7.3-xml php7.3-intl php7.3-zip php7.3-curl php7.3-apcu php7.3-odbc php7.3-sqlite3 php7.3-curl php7.3-bcmath php7.3-imagick -y
       
       apt install php php-dev php-common php-fpm php-mysql php-mbstring php-readline php-fpm php-cli php-curl php-gd php-xdebug php-soap php-curl php-xsl php-xml php-intl php-zip php-curl php-apcu php-odbc php-sqlite3 php-curl php-bcmath php-imagick -y
-      
+      ```
+      ```
       nano /etc/php/7.3/mods-available/xdebug.ini
       ```
       ```
