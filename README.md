@@ -372,3 +372,11 @@
   apparmor_parser -v -R /etc/apparmor.d/usr.sbin.mysqld
   systemctl restart mariadb
   ```
+- mysql
+  ```
+  CREATE DATABASE NAME;
+  CREATE USER 'NAME'@'192.168.%.%' IDENTIFIED BY 'PASS';
+  GRANT ALL ON NAME.* TO 'NAME'@'192.168.%.%' IDENTIFIED BY 'PASS' WITH GRANT OPTION;
+  
+  DROP USER 'mobile_dev'@'192.168.%.%';
+  ```
