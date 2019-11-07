@@ -131,15 +131,17 @@
       FLUSH PRIVILEGES;
       CREATE USER 'root'@'localhost' IDENTIFIED BY 'rootroot';
       GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+      UPDATE mysql.user SET Grant_priv='Y' WHERE User='root';
       exit
       ```   
       ```
-      nano /etc/mysql/my.cnf
+      nano /etc/mysql/mariadb.conf.d/50-server.cnf
       ```
       ```
       [mysqld]
-      character-set-server=utf8
-      collation-server=utf8_general_ci
+      bind-address = 0.0.0.0
+      character-set-server=utf8mb4
+      collation-server=utf8mb4_general_ci
       ```
       ```
       /etc/init.d/mysql restart
