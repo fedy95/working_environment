@@ -45,8 +45,12 @@
     ```
     
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    - puml
     ```
     apt install openjdk-11-jre -y
+    apt install graphviz
+    ```
+    ```
     apt install snapd -y
     apt install git -y
     snap install postman
