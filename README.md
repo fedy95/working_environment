@@ -29,6 +29,7 @@
     - [clion](https://github.com/fedy95/working_environment#clion--to-contents)
       - [GTest](https://github.com/fedy95/working_environment#gtest--to-contents)
     - [webstorm](https://github.com/fedy95/working_environment#webstorm--to-contents)
+    - [upsource](https://github.com/fedy95/working_environment#upsource--to-contents)
   - VM
     - [VMware](https://github.com/fedy95/working_environment#vmware--to-contents)
     - [VirtualBox](https://github.com/fedy95/working_environment#virtualbox--to-contents)
@@ -306,7 +307,9 @@
     ```
     snap install webstorm --classic
     ```
- 
+    
+    - #### [upsource](https://www.jetbrains.com/upsource/download/#section=linux)  | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    
   - ### VM
     - ### VMware | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
