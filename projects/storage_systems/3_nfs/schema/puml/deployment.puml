@@ -1,0 +1,27 @@
+@startuml
+
+node "Ryzen 1700 3.65Ghz | DDR4-2133MHz | NVMe" <<device>> #fffcd5 {
+    node "VMware Workstation 15 Pro" <<Hypervisor>> #d5d9ff {
+        node "2 Core | 2 Gb | NVMe (SCSI controller - LSI Logic)_clone" <<device>> #fffcd5 {
+            node "**ubuntu-18.04.3-desktop-amd64_clone**" <<OS>> #fcd5ff {
+                artifact **nfs-kernel-server_clone** <<artifact>> #ffffff {
+                }
+                artifact **nfs-common_clone** <<artifact>> #ffffff {
+                }
+                artifact **open-vm-tools_clone** <<artifact>> #ffffff {
+                }
+            }
+        }
+        node "2 Core | 2 Gb | NVMe (SCSI controller - LSI Logic)" <<device>> #fffcd5 {
+            node "**ubuntu-18.04.3-desktop-amd64**" <<OS>> #fcd5ff {
+                artifact "**nfs-kernel-server**" <<artifact>> #ffffff {
+                }
+                artifact **nfs-common** <<artifact>> #ffffff {
+                }
+                artifact **open-vm-tools** <<artifact>> #ffffff {
+                }
+            }
+        }
+    }
+}
+@enduml
