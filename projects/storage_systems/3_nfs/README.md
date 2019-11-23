@@ -3,7 +3,7 @@
 - [ubuntu wiki](https://help.ubuntu.com/lts/serverguide/network-file-system.html)
 
 ### architecture
-![img](https://github.com/fedy95/working_enviroment/tree/master/projects/storage_systems/3_nfs/schema/png/deployment.png)
+![img](https://github.com/fedy95/working_environment/blob/master/projects/storage_systems/3_nfs/schema/png/deployment.png)
 ### install
 - server
 ```bash
