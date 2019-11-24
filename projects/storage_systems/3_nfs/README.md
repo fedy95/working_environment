@@ -42,20 +42,46 @@ mount -t nfs -O uid=1000,iocharset=utf-8 192.168.30.129:/home/fedy95/Documents/a
 ```
 
 ### datasets
-1. txt 
-- 1 Gb (1 074,7 Mb) 52407 files by 512 str form [link](https://habr.com/en/post/357402/)
 
-| Operation | real_time, [s] | user_time, [s] | sys_time, [s] |
+- [generate_datasets](https://github.com/fedy95/working_environment/blob/master/projects/storage_systems/3_nfs/datasets/generate_datasets.py)
+
+1. txt 
+
+| operation | # | dataset | real_time, [s] |
 |:---:|:---:|:---:|:---:|
-|cp from nfs|133,83|4,26|6,31|
-|cp from nfs|134,54|6,72|6,33|
-|cp from nfs|134,44|7,68|6,25|
-|**avg**|**134,27**|**6,22**|**6,30**|
-|mv from nfs|215,94|1,16|12,79|
-|mv from nfs|242,44|1,09|12,85|
-|mv from nfs|214,42|0,90|12,82|
-|**avg**|**224,27**|**1,05**|**12,82**|
-|mv to nfs|254,21|1,04|13,99|
-|mv to nfs|255,61|1,09|14,53|
-|mv to nfs|256,01|0,97|13,94|
-|**avg**|**255,27**|**1,04**|**14,15**|
+|**cp from nfs**|1|txt|5,38|
+|-|2|txt|4,93|
+|-|3|txt|4,97|
+|-|1|binary zip|4,64|
+|-|2|binary zip|4,47|
+|-|3|binary zip|4,48|
+|-|1|binary|4,69|
+|-|2|binary|4,46|
+|-|3|binary|4,27|
+|**-**|**avg**|**txt**|**5,09**|
+|**-**|**avg**|**binary zip**|**4,53**|
+|**-**|**avg**|**binary**|**4,47**|
+|**mv from nfs**|1|txt|5,45|
+|-|2|txt|8,90|
+|-|3|txt|5,99|
+|-|1|binary zip|4,56|
+|-|2|binary zip|5,06|
+|-|3|binary zip|4,45|
+|-|1|binary|4,46|
+|-|2|binary|4,91|
+|-|3|binary|4,34|
+|**-**|**avg**|**txt**|**6,78**|
+|**-**|**avg**|**binary zip**|**4,69**|
+|**-**|**avg**|**binary**|**4,57**|
+|**mv to nfs**|1|txt|8,85|
+|-|2|txt|5,92|
+|-|3|txt|8,87|
+|-|1|binary zip|9,58|
+|-|2|binary zip|4,28|
+|-|3|binary zips|4,91|
+|-|1|binary|4,91|
+|-|2|binary|4,50|
+|-|3|binary|5,05|
+|**-**|**avg**|**txt**|**7,88**|
+|**-**|**avg**|**binary zip**|**6,26**|
+|**-**|**avg**|**binary**|**4,82**|
