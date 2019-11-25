@@ -19,39 +19,39 @@ do
 done
 
 #---
-echo ii] binary zip
+echo ii] single_binary
 
 for i in `seq 1 3`;
 do
     echo $i] test cp from nfs
-    time cp -r ~/Documents/project/binary/randombinary1.zip ~/Documents/
-    rm -r ~/Documents/randombinary1.zip
+    time cp -r ~/Documents/project/binary/single_binary.zip ~/Documents/
+    rm -r ~/Documents/single_binary.zip
 done
 
 for i in `seq 1 3`;
 do
     echo $i] test mv from nfs
-    time mv ~/Documents/project/binary/randombinary1.zip ~/Documents/
+    time mv ~/Documents/project/binary/single_binary.zip ~/Documents/
 
     echo $i] test mv to nfs
-    time mv ~/Documents/randombinary1.zip ~/Documents/project/binary/
+    time mv ~/Documents/single_binary.zip ~/Documents/project/binary/
 done
 
 #---
-echo iii] binary
+echo iii] multi_binary
 
 for i in `seq 1 3`;
 do
     echo $i] test cp from nfs
-    time cp -r ~/Documents/project/binary/randombinary1 ~/Documents/
-    rm -r ~/Documents/randombinary1
+    time cp -r ~/Documents/project/binary/multi_binary.zip ~/Documents/
+    rm -r ~/Documents/multi_binary.zip
 done
 
 for i in `seq 1 3`;
 do
     echo $i] test mv from nfs
-    time mv ~/Documents/project/binary/randombinary1 ~/Documents/
+    time mv ~/Documents/project/binary/multi_binary.zip ~/Documents/
 
     echo $i] test mv to nfs
-    time mv ~/Documents/randombinary1 ~/Documents/project/binary/
+    time mv ~/Documents/multi_binary.zip ~/Documents/project/binary/
 done
