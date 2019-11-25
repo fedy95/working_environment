@@ -45,43 +45,41 @@ mount -t nfs -O uid=1000,iocharset=utf-8 192.168.30.129:/home/fedy95/Documents/a
 
 - [generate_datasets](https://github.com/fedy95/working_environment/blob/master/projects/storage_systems/3_nfs/datasets/generate_datasets.py)
 
-1. txt 
-
 | operation | # | dataset | real_time, [s] |
 |:---:|:---:|:---:|:---:|
-|**cp from nfs**|1|txt|5,38|
-|-|2|txt|4,93|
-|-|3|txt|4,97|
-|-|1|binary zip|4,64|
-|-|2|binary zip|4,47|
-|-|3|binary zip|4,48|
-|-|1|binary|4,69|
-|-|2|binary|4,46|
-|-|3|binary|4,27|
-|**-**|**avg**|**txt**|**5,09**|
-|**-**|**avg**|**binary zip**|**4,53**|
-|**-**|**avg**|**binary**|**4,47**|
-|**mv from nfs**|1|txt|5,45|
-|-|2|txt|8,90|
-|-|3|txt|5,99|
-|-|1|binary zip|4,56|
-|-|2|binary zip|5,06|
-|-|3|binary zip|4,45|
-|-|1|binary|4,46|
-|-|2|binary|4,91|
-|-|3|binary|4,34|
-|**-**|**avg**|**txt**|**6,78**|
-|**-**|**avg**|**binary zip**|**4,69**|
-|**-**|**avg**|**binary**|**4,57**|
-|**mv to nfs**|1|txt|8,85|
-|-|2|txt|5,92|
-|-|3|txt|8,87|
-|-|1|binary zip|9,58|
-|-|2|binary zip|4,28|
-|-|3|binary zips|4,91|
-|-|1|binary|4,91|
-|-|2|binary|4,50|
-|-|3|binary|5,05|
-|**-**|**avg**|**txt**|**7,88**|
-|**-**|**avg**|**binary zip**|**6,26**|
-|**-**|**avg**|**binary**|**4,82**|
+|**cp from nfs**|1|txt|6,35|
+|-|2|txt|5,38|
+|-|3|txt|5,23|
+|-|1|single_binary|4,60|
+|-|2|single_binary|4,56|
+|-|3|single_binary|4,52|
+|-|1|multi_binary|4,77|
+|-|2|multi_binary|4,66|
+|-|3|multi_binary|4,67|
+|**-**|**avg**|**txt**|**5,65**|
+|**-**|**avg**|**single_binary**|**4,56**|
+|**-**|**avg**|**multi_binary**|**4,63**|
+|**mv from nfs**|1|txt|5,87|
+|-|2|txt|8,47|
+|-|3|txt|6,41|
+|-|1|single_binary|4,47|
+|-|2|single_binary|4,70|
+|-|3|single_binary|4,56|
+|-|1|multi_binary|4,60|
+|-|2|multi_binary|4,77|
+|-|3|multi_binary|4,65|
+|**-**|**avg**|**txt**|**7,01**|
+|**-**|**avg**|**single_binary**|**4,58**|
+|**-**|**avg**|**multi_binary**|**4,67**|
+|**mv to nfs**|1|txt|8,61|
+|-|2|txt|6,40|
+|-|3|txt|8,72|
+|-|1|single_binary|4,79|
+|-|2|single_binary|4,54|
+|-|3|single_binarys|4,68|
+|-|1|multi_binary|4,64|
+|-|2|multi_binary|4,57|
+|-|3|multi_binary|4,69|
+|**-**|**avg**|**txt**|**7,91**|
+|**-**|**avg**|**single_binary**|**4,67**|
+|**-**|**avg**|**multi_binary**|**4,63**|
