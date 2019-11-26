@@ -33,6 +33,7 @@
   - VM
     - [VMware](https://github.com/fedy95/working_environment#vmware--to-contents)
     - [VirtualBox](https://github.com/fedy95/working_environment#virtualbox--to-contents)
+  - [typora](https://www.typora.io/#linux)
   - [nodeJS](https://github.com/fedy95/working_environment#nodejs--to-contents)
   - [filezilla](https://github.com/fedy95/working_environment#filezilla--to-contents)
   - [teamviewer](https://github.com/fedy95/working_environment#teamviewer--to-contents)
@@ -330,7 +331,7 @@
       ```
       apt install virtualbox -y
       ```
-      
+  
   - ### [nodeJS](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) | [to contents](https://github.com/fedy95/working_environment#system-packages)
     ```
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
