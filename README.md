@@ -266,9 +266,6 @@
   - ### IDE
     - #### [phpStorm](https://www.jetbrains.com/phpstorm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       - [install from package](https://www.jetbrains.com/help/phpstorm/install-and-set-up-product.html)
-      ```
-      snap install phpstorm --classic
-      ```
       
     - #### [pyCharm](https://www.jetbrains.com/pycharm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       - [install from package](https://www.jetbrains.com/help/pycharm/install-and-set-up-product.html)
@@ -281,7 +278,7 @@
     - #### [IDEA](https://www.jetbrains.com/idea/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       - [install from package](https://www.jetbrains.com/help/idea/install-and-set-up-product.html)
       ```
-      snap install intellij-idea-ultimate --classic
+      sudo apt install gradle
       ```
       
     - #### [cLion](https://www.jetbrains.com/clion/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
@@ -304,10 +301,7 @@
       ```
       
     - #### [webstorm](https://www.jetbrains.com/webstorm/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-    - [install from package](https://www.jetbrains.com/help/webstorm/install-and-set-up-product.html)
-    ```
-    snap install webstorm --classic
-    ```
+      - [install from package](https://www.jetbrains.com/help/webstorm/install-and-set-up-product.html)
     
     - #### [upsource](https://www.jetbrains.com/upsource/download/#section=linux)  | [to contents](https://github.com/fedy95/working_environment#system-packages)
     - [install](https://www.jetbrains.com/help/upsource/zip-installation.html)
