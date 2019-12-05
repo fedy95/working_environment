@@ -41,14 +41,14 @@
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset--to-contents)
 ---
   - ### update | [to contents](https://github.com/fedy95/working_environment#system-packages)
-    ```
+    ```bash
     apt update
     apt dist-upgrade
     ```
     
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
     - puml
-    ```
+    ```bash
     apt install openjdk-11-jre -y
     apt install graphviz
     ```
@@ -57,20 +57,24 @@
     apt install git -y
     snap install postman
     ```
-      
+    - docker
+    ```bash
+    apt install docker-compose
+
+    ```
     - #### SSH | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
+      ```bash
       apt install ssh -y
       ```
       
-      ```
+      ```bash
       ssh-keygen -t rsa -C "fedy95@protonmail.com"
       cat .ssh/id_rsa.pub
       https://github.com/settings/keys
       ```
       
       - ##### [second account on machine](https://gist.github.com/jexchan/2351996)
-      ```
+      ```bash
       nano config 
        - Host github.com       
        - HostName github.com
