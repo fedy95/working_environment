@@ -356,12 +356,12 @@
     ```
 ### other
 - update server timezone
-  ```
+  ```bash
   timedatectl set-timezone Europe/Moscow
   apt install ntp -y
   ```
 - mysql remove
-  ```
+  ```bash
   apt remove dbconfig-mysql 
   apt remove --purge mysql*  -y
   apt --purge remove mysql-server 
@@ -377,10 +377,12 @@
   systemctl restart mariadb
   ```
 - mysql
-  ```
+  ```mysql
   CREATE DATABASE NAME;
   CREATE USER 'NAME'@'192.168.%.%' IDENTIFIED BY 'PASS';
   GRANT ALL ON NAME.* TO 'NAME'@'192.168.%.%' IDENTIFIED BY 'PASS' WITH GRANT OPTION;
   
   DROP USER 'mobile_dev'@'192.168.%.%';
+  
+  SHOW VARIABLES LIKE "%version%";
   ```
