@@ -76,14 +76,12 @@
       - ##### [second account on machine](https://gist.github.com/jexchan/2351996)
       ```bash
       nano config 
-       - Host github.com       
-       - HostName github.com
-       - User git
-       - IdentityFile ~/.ssh/id_rsa_github
+         Host github.com       
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_rsa_github
       ssh-keygen -t rsa -C "fedy95@protonmail.com"
-       - Enter file in which to save the key (/home/ifedorov/.ssh/id_rsa): /home/ifedorov/.ssh/id_rsa_github_fedy95
-       - Enter passphrase (empty for no passphrase): 
-       - Enter same passphrase again: 
+         /home/ifedorov/.ssh/id_rsa_github_fedy95
       ssh-add id_rsa_github_fedy95
       ssh-add -l
       cat id_rsa_github_fedy95.pub
