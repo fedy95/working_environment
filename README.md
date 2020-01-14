@@ -47,10 +47,12 @@
     ```
     
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    - [java](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
     - puml
     ```bash
     apt install openjdk-11-jre -y
     apt install graphviz
+    
     ```
     ```
     apt install snapd -y
