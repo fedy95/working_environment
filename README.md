@@ -50,7 +50,7 @@
     - [java](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
     - puml
     ```bash
-    apt install openjdk-11-jre -y
+    apt install openjdk-11-jdk -y
     apt install graphviz
     
     ```
