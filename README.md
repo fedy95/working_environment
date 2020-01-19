@@ -334,6 +334,7 @@
     ```
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
     apt install nodejs -y
+    apt install npm -y
     ```
   
   - ### filezilla | [to contents](https://github.com/fedy95/working_environment#system-packages)
