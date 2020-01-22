@@ -285,6 +285,13 @@
       sudo apt install gradle
       ```
       
+    - #### andorid studio
+       ```bash
+       sudo apt install qemu-kvm
+       sudo adduser <Replace with username> kvm
+       sudo chown <Replace with username> /dev/kvm
+       ```
+ 
     - #### [cLion](https://www.jetbrains.com/clion/?fromMen) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       - [install from package](https://www.jetbrains.com/help/clion/install-and-set-up-product.html)   
       - [guide](http://wiki.cs.huji.ac.il/wiki/Installing_CLion_on_Linux)
