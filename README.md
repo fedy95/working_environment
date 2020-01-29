@@ -82,7 +82,7 @@
          HostName github.com
          User git
          IdentityFile ~/.ssh/id_rsa_github
-      ssh-keygen -t rsa -C "fedy95@protonmail.com"
+      ssh-keygen -t rsa -C "fedy95.work@protonmail.com"
          /home/ifedorov/.ssh/id_rsa_github_fedy95
       ssh-add id_rsa_github_fedy95
       ssh-add -l
