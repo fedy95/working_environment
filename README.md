@@ -270,8 +270,8 @@
       ```
       
     - #### composer | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
       - [install](https://getcomposer.org/download/)
+      ```
       mv composer.phar /usr/local/bin/composer 
       ```
       
