@@ -166,22 +166,26 @@
       ```
       apt install php7.1 php7.1-dev php7.1-common libapache2-mod-php7.1 php7.1-fpm php7.1-mysql php7.1-mbstring php7.1-readline php7.1-fpm php7.1-cli php7.1-curl php7.1-gd php7.1-xdebug php7.1-soap php7.1-curl php7.1-xsl php7.1-xml php7.1-intl php7.1-zip php7.1-curl php7.1-apcu php7.1-odbc php7.1-sqlite3 php7.1-curl php7.1-bcmath php7.1-imagick -y
       nano /etc/php/7.1/mods-available/xdebug.ini
-       - `xdebug.remote_enable=1`
-       - `xdebug.idekey="PHPSTORM"`
-       - `xdebug.max_nesting_level=150`
-       - `xdebug.default_enable=1`
-       - `xdebug.remote_host=127.0.0.1`
-       - `xdebug.remote_port=9000`
-       - `xdebug.remote_handler=dbgp`
-       - `xdebug.remote_connect_back=1`
-       - `xdebug.remote_autostart=1`
+      ```
+       xdebug.remote_enable=1
+       xdebug.idekey="PHPSTORM"
+       xdebug.max_nesting_level=1000
+       xdebug.default_enable=1
+       xdebug.remote_host=127.0.0.1
+       xdebug.remote_port=9000
+       xdebug.remote_handler=dbgp
+       xdebug.remote_connect_back=1
+       xdebug.remote_autostart=1
+       ```
       systemctl restart apache2.service
       a2enmod proxy_fcgi setenvif
       a2enconf php7.1-fpm
       nano /etc/php/7.1/apache2/php.ini
       nano /etc/php/7.1/cli/php.ini
       nano /etc/php/7.1/fpm/php.ini
-       - `short_open_tag = On`
+      ```
+      short_open_tag = On
+      ```
       systemctl restart apache2.service
       ```
     - #### 7.3 | [to contents](https://github.com/fedy95/working_environment#system-packages)
@@ -198,17 +202,6 @@
       ```
       ```
       nano /etc/php/7.3/mods-available/xdebug.ini
-      ```
-      ```
-      xdebug.remote_enable=1
-      xdebug.idekey="PHPSTORM"
-      xdebug.max_nesting_level=1000
-      xdebug.default_enable=1
-      xdebug.remote_host=127.0.0.1
-      xdebug.remote_port=9000
-      xdebug.remote_handler=dbgp
-      xdebug.remote_connect_back=1
-      xdebug.remote_autostart=1
       ```
     - #### oci8 (*PHP>=7.0, instantclient>=12.1.0.2.0, oci8>=2.0.12*) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```
@@ -232,14 +225,24 @@
       echo "extension = oci8.so" >> /etc/php/7.1/fpm/php.ini
       echo "extension = oci8.so" >> /etc/php/7.1/cli/php.ini
       nano /etc/profile
-       - LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2:$LD_LIBRARY_PATH
-       - PATH=/opt/oracle/instantclient_12_2:$PATH
+      ```
+      ```
+      LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2:$LD_LIBRARY_PATH
+      PATH=/opt/oracle/instantclient_12_2:$PATH
+      ```
+      ```
       nano /etc/environment
-       - LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2:$LD_LIBRARY_PATH
-       - ORACLE_HOME=/opt/oracle/instantclient_12_2:$ORACLE_HOME
+      ```
+      LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2:$LD_LIBRARY_PATH
+      ORACLE_HOME=/opt/oracle/instantclient_12_2:$ORACLE_HOME
+      ```
       nano /etc/apache2/envvars
-       - export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2
-       - export ORACLE_HOME=/opt/oracle/instantclient_12_2
+      ```
+      ```
+      export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2
+      export ORACLE_HOME=/opt/oracle/instantclient_12_2
+      ```
+      ```
       echo "/opt/oracle/instantclient_12_2" >> /etc/ld.so.conf.d/oracle-instantclient.conf
       ldconfig
       service php7.1-fpm restart
