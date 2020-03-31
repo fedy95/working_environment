@@ -208,11 +208,10 @@
       nano /etc/php/7.3/mods-available/xdebug.ini
       ```
     - #### oci8 (*PHP>=7.0, instantclient>=12.1.0.2.0, oci8>=2.0.12*) | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
       - Download packages [instantclient](https://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
         - instantclient-basic-linux.x64-12.2.0.1.0.zip;
         - iinstantclient-sdk-linux.x64-12.2.0.1.0.zip.
-       
+      ```
       apt-get install php-pear build-essential libaio1
       unzip instantclient-basic-linux.x64-12.2.0.1.0.zip
       unzip instantclient-sdk-linux.x64-12.2.0.1.0.zip
@@ -237,8 +236,10 @@
       ```
       nano /etc/environment
       ```
+      ```
       LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2:$LD_LIBRARY_PATH
       ORACLE_HOME=/opt/oracle/instantclient_12_2:$ORACLE_HOME
+      ```
       ```
       nano /etc/apache2/envvars
       ```
