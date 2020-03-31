@@ -167,6 +167,7 @@
       apt install php7.1 php7.1-dev php7.1-common libapache2-mod-php7.1 php7.1-fpm php7.1-mysql php7.1-mbstring php7.1-readline php7.1-fpm php7.1-cli php7.1-curl php7.1-gd php7.1-xdebug php7.1-soap php7.1-curl php7.1-xsl php7.1-xml php7.1-intl php7.1-zip php7.1-curl php7.1-apcu php7.1-odbc php7.1-sqlite3 php7.1-curl php7.1-bcmath php7.1-imagick -y
       nano /etc/php/7.1/mods-available/xdebug.ini
       ```
+      ```
        xdebug.remote_enable=1
        xdebug.idekey="PHPSTORM"
        xdebug.max_nesting_level=1000
@@ -176,7 +177,8 @@
        xdebug.remote_handler=dbgp
        xdebug.remote_connect_back=1
        xdebug.remote_autostart=1
-       ```
+      ```
+      ```
       systemctl restart apache2.service
       a2enmod proxy_fcgi setenvif
       a2enconf php7.1-fpm
@@ -184,7 +186,9 @@
       nano /etc/php/7.1/cli/php.ini
       nano /etc/php/7.1/fpm/php.ini
       ```
+      ```
       short_open_tag = On
+      ```
       ```
       systemctl restart apache2.service
       ```
