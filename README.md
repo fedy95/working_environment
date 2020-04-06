@@ -333,7 +333,7 @@
       - [install from package](https://www.jetbrains.com/help/webstorm/install-and-set-up-product.html)
     
     - #### [upsource](https://www.jetbrains.com/upsource/download/#section=linux)  | [to contents](https://github.com/fedy95/working_environment#system-packages)
-    - [install](https://www.jetbrains.com/help/upsource/zip-installation.html)
+      - [install](https://www.jetbrains.com/help/upsource/zip-installation.html)
     
   - ### VM
     - ### VMware | [to contents](https://github.com/fedy95/working_environment#system-packages)
