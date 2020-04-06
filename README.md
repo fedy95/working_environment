@@ -159,8 +159,14 @@
       
   - ### PHP
     - #### 7.1 | [to contents](https://github.com/fedy95/working_environment#system-packages)
+      ```bash
+      add-apt-repository ppa:ondrej/php
       ```
-      add-apt-repository ppa:ondrej/php *(apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C)*
+      or
+      ```bash
+      apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C
+      ```
+      ```bash
       apt update -y
       ```
       ```
@@ -193,9 +199,13 @@
       systemctl restart apache2.service
       ```
     - #### 7.3 | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```
+      ```bash
       add-apt-repository ppa:ondrej/php
-      - or (apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C)
+      ```
+      or
+      ```bash
+      apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C
+      ```
       apt update -y
       apt dist-upgrade
       ```
