@@ -161,15 +161,15 @@
     - #### 7.1 | [to contents](https://github.com/fedy95/working_environment#system-packages)
       ```bash
       add-apt-repository ppa:ondrej/php
+      apt update -y
       ```
       or
       ```bash
       apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C
-      ```
-      ```bash
       apt update -y
       ```
-      ```
+      
+      ```bash
       apt install php7.1 php7.1-dev php7.1-common libapache2-mod-php7.1 php7.1-fpm php7.1-mysql php7.1-mbstring php7.1-readline php7.1-fpm php7.1-cli php7.1-curl php7.1-gd php7.1-xdebug php7.1-soap php7.1-curl php7.1-xsl php7.1-xml php7.1-intl php7.1-zip php7.1-curl php7.1-apcu php7.1-odbc php7.1-sqlite3 php7.1-curl php7.1-bcmath php7.1-imagick -y
       nano /etc/php/7.1/mods-available/xdebug.ini
       ```
@@ -199,17 +199,17 @@
       systemctl restart apache2.service
       ```
     - #### 7.3 | [to contents](https://github.com/fedy95/working_environment#system-packages)
-      ```bash
+       ```bash
       add-apt-repository ppa:ondrej/php
+      apt update -y
       ```
       or
       ```bash
       apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 14AA40EC0831756756D7F66C4F4EA0AAE5267A6C
-      ```
       apt update -y
-      apt dist-upgrade
       ```
-      ```
+  
+      ```bash
       apt install php7.3 php7.3-dev php7.3-common php7.3-fpm php7.3-mysql php7.3-mbstring php7.3-readline php7.3-fpm php7.3-cli php7.3-curl php7.3-gd php7.3-xdebug php7.3-soap php7.3-curl php7.3-xsl php7.3-xml php7.3-intl php7.3-zip php7.3-curl php7.3-apcu php7.3-odbc php7.3-sqlite3 php7.3-curl php7.3-bcmath php7.3-imagick -y
       
       apt install php php-dev php-common php-fpm php-mysql php-mbstring php-readline php-fpm php-cli php-curl php-gd php-xdebug php-soap php-curl php-xsl php-xml php-intl php-zip php-curl php-apcu php-odbc php-sqlite3 php-curl php-bcmath php-imagick -y
