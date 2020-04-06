@@ -343,10 +343,10 @@
       ```
       
       - [install from package](https://www.vmware.com/products/workstation-player.html)
+      ```bash
       chmod +x ~/Downloads/VMware-Player*
-      ~/Downloads/VMware-Player*
-
-      
+      ```
+     
       - [tools repository](https://packages.vmware.com/tools/esx/latest/index.html)
       
     - ### VirtualBox | [to contents](https://github.com/fedy95/working_environment#system-packages)
