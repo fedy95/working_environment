@@ -37,6 +37,7 @@
   - [nodeJS](https://github.com/fedy95/working_environment#nodejs--to-contents)
   - [filezilla](https://github.com/fedy95/working_environment#filezilla--to-contents)
   - [teamviewer](https://github.com/fedy95/working_environment#teamviewer--to-contents)
+  - [zoom](https://github.com/fedy95/working_environment#zoom--to-contents)
   - [KRDC](https://github.com/fedy95/working_environment#krdc--to-contents)
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset--to-contents)
 ---
@@ -372,6 +373,12 @@
     wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
     gdebi teamviewer_amd64.deb
     teamviewer
+    ```
+  - ### [zoom](https://zoom.us/) | [to contents](https://github.com/fedy95/working_environment#system-packages)
+    ```
+    apt install libgl1-mesa-glx libegl1-mesa libxcb-xtest0
+    dpkg -i zoom_amd64.deb
+    sudo apt-get install -f
     ```
     
   - ### KRDC | [to contents](https://github.com/fedy95/working_environment#system-packages)
