@@ -1,9 +1,11 @@
 # working_environment
 
-- [neon kde](https://neon.kde.org/)
+
+- [kubuntu](https://kubuntu.org/)
 - [ubuntu](https://ubuntu.com)
 - [debian](https://www.debian.org/)
 - [raspberry](https://www.raspberrypi.org/downloads/)
+- [neon kde](https://neon.kde.org/)
 
 - ## system packages
   - [update](https://github.com/fedy95/working_environment#update--to-contents)
