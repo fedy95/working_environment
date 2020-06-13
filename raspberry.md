@@ -1,14 +1,13 @@
 # ssh
 ```bash
-su -i fedy95
 adduser fedy95
 usermod -aG sudo fedy95
+su - fedy95
 
 apt install ssh -y
 ssh-keygen -t rsa -C "fedy95@protonmail.com"
-cat .ssh/id_rsa.pub
-https://github.com/settings/keys
 
+sudo -i
 mkdir /media/usb
 mount -t vfat /dev/sda1 /media/usb -o uid=1000
 cp -r /home/fedy95/.ssh /media/usb
