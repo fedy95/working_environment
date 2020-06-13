@@ -28,6 +28,6 @@ sudo usermod -aG docker USER_NAME
 
 ### update
 ```bash
-apt update
-apt dist-upgrade
+apt update -y
+apt dist-upgrade -y
 ```
