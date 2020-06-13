@@ -25,3 +25,9 @@ sudo sh get-docker.sh
 
 sudo usermod -aG docker USER_NAME
 ```
+
+### update
+```bash
+apt update
+apt dist-upgrade
+```
