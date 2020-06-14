@@ -28,7 +28,7 @@ sudo usermod -aG docker USER_NAME
 
 ### [docker-compose](https://docs.docker.com/compose/install/)
 ```bash
-sudo apt  install docker-compose -y
+sudo apt install docker-compose -y
 ```
 or
 ```bash
