@@ -14,6 +14,8 @@ cp -r /home/fedy95/.ssh /media/usb
 
 cd
 umount /media/usb
+
+sudo apt install net-tools
 ```
 
 ### [docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
