@@ -42,7 +42,7 @@ docker-compose --version
 sudo apt update -y && sudo apt dist-upgrade -y
 ```
 
-### kubernates
+### k8s
 https://wiki.learnlinux.tv/index.php/Setting_up_a_Raspberry_Pi_Kubernetes_Cluster_with_Ubuntu_20.04
 
 ```bash
