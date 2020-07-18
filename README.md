@@ -45,7 +45,7 @@
 ---
   - ### update | [to contents](https://github.com/fedy95/working_environment#system-packages)
 ```bash
-sudo apt update && apt dist-upgrade
+sudo apt update && sudo apt dist-upgrade
 ```
     
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
