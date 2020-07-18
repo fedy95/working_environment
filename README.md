@@ -44,10 +44,9 @@
   - [Visual Paradigm](https://github.com/fedy95/working_environment#vp-reset--to-contents)
 ---
   - ### update | [to contents](https://github.com/fedy95/working_environment#system-packages)
-    ```bash
-    apt update
-    apt dist-upgrade
-    ```
+```bash
+sudo apt update && apt dist-upgrade
+```
     
   - ### development | [to contents](https://github.com/fedy95/working_environment#system-packages)
     - [java](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
