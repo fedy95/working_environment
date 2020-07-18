@@ -6,14 +6,7 @@ su - fedy95
 
 apt install ssh -y
 ssh-keygen -t rsa -C "fedy95@protonmail.com"
-
-sudo -i
-mkdir /media/usb
-mount -t vfat /dev/sda1 /media/usb -o uid=1000
-cp -r /home/fedy95/.ssh /media/usb
-
-cd
-umount /media/usb
+ssh-copy-id fedy95@remote_host
 
 sudo apt install net-tools
 ```
