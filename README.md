@@ -59,6 +59,9 @@ sudo apt update && sudo apt dist-upgrade
     ```
     apt install snapd -y
     apt install git -y
+    echo ".idea" > ~/.gitignore
+    git config --global core.excludesfile ~/.gitignore
+    
     snap install postman
     ```
     - docker
