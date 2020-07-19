@@ -10,6 +10,18 @@ ssh-copy-id fedy95@remote_host
 
 sudo apt install net-tools
 ```
+### xrdp
+```bash
+sudo apt install ubuntu-desktop
+sudo apt install xrdp
+sudo nano /etc/polkit-1/localauthority/50-local.d/45-allow.colord.pkla
+[Allow Colord all Users]
+Identity=unix-user:*
+Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+```
 
 ### [docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 ```bash
