@@ -21,6 +21,9 @@ Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager
 ResultAny=no
 ResultInactive=no
 ResultActive=yes
+
+sudo nano /etc/systemd/system/systemd-suspend.service
+ExecStart=/lib/systemd/systemd-sleep suspend -> ExecStart=/lib/systemd/systemd-sleep ignore
 ```
 
 ### [docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
