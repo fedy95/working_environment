@@ -24,6 +24,10 @@ ResultActive=yes
 
 sudo nano /etc/systemd/system/systemd-suspend.service
 ExecStart=/lib/systemd/systemd-sleep suspend -> ExecStart=/lib/systemd/systemd-sleep ignore
+
+sudo nano /etc/systemd/logind.conf
+HandleLidSwitch=ignore
+IdleAction=ignore
 ```
 
 ### [docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
