@@ -8,6 +8,7 @@ apt install ssh -y
 ssh-keygen -t rsa -C "fedy95@protonmail.com"
 ssh-copy-id fedy95@remote_host
 
+sudo apt update -y && sudo apt dist-upgrade -y
 sudo apt install net-tools
 
 # update hostname
