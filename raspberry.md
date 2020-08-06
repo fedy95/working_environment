@@ -9,6 +9,16 @@ ssh-keygen -t rsa -C "fedy95@protonmail.com"
 ssh-copy-id fedy95@remote_host
 
 sudo apt install net-tools
+
+# update hostname
+sudo nano /etc/hostname
+sudo reboot
+
+# update passwd
+passwd
+
+# rm user
+sudo deluser username
 ```
 ### xrdp
 ```bash
