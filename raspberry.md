@@ -21,25 +21,6 @@ passwd
 # rm user
 sudo deluser username
 ```
-### xrdp
-```bash
-sudo apt install ubuntu-desktop
-sudo apt install xrdp
-sudo nano /etc/polkit-1/localauthority/50-local.d/45-allow.colord.pkla
-[Allow Colord all Users]
-Identity=unix-user:*
-Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
-ResultAny=no
-ResultInactive=no
-ResultActive=yes
-
-sudo nano /etc/systemd/system/systemd-suspend.service
-ExecStart=/lib/systemd/systemd-sleep suspend -> ExecStart=/lib/systemd/systemd-sleep ignore
-
-sudo nano /etc/systemd/logind.conf
-HandleLidSwitch=ignore
-IdleAction=ignore
-```
 
 ### [docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 ```bash
