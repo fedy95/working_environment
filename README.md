@@ -14,6 +14,7 @@
     - [ssh](https://github.com/fedy95/working_environment#ssh--to-contents)
   - IDE
     - [phpstorm](https://github.com/fedy95/working_environment#phpstorm--to-contents)
+    - [goland](https://github.com/fedy95/working_environment#goland--to-contents)
     - [pycharm](https://github.com/fedy95/working_environment#pycharm--to-contents)
     - [idea](https://github.com/fedy95/working_environment#pycharm--to-contents)
     - [clion](https://github.com/fedy95/working_environment#clion--to-contents)
@@ -34,6 +35,9 @@
   - ### IDE
     - #### [phpStorm](https://www.jetbrains.com/phpstorm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       - [install from package](https://www.jetbrains.com/help/phpstorm/install-and-set-up-product.html)
+   
+    - #### [goland](https://www.jetbrains.com/go/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
+      - [install from package](https://www.jetbrains.com/help/go/installation-guide.html)
       
     - #### [pyCharm](https://www.jetbrains.com/pycharm/?fromMenu) | [to contents](https://github.com/fedy95/working_environment#system-packages)
       - [install from package](https://www.jetbrains.com/help/pycharm/install-and-set-up-product.html)
