@@ -10,6 +10,7 @@ ssh-copy-id fedy95@remote_host
 
 sudo apt update -y && sudo apt dist-upgrade -y
 sudo apt install net-tools
+sudo apt install make
 
 # update hostname
 sudo nano /etc/hostname
